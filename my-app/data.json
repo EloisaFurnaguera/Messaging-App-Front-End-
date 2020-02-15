@@ -1,0 +1,31 @@
+{
+    "messages": [{
+    "sentAt":"2012-11-13T17:29:37.003Z",
+    "messageId": "1",
+    "content": "Hello 1",
+    "senderId": "1",
+    "roomId": "1"
+    },
+    {
+    "sentAt":"2015-05-22T13:55:10.542Z",
+    "messageId": "2",
+    "content": "Hello 2",
+    "senderId": "2",
+    "roomId": "1"
+    },
+    {
+    "sentAt":"2015-05-22T14:55:10.542Z",
+    "messageId": "3",
+    "content": "Hello 3",
+    "senderId": "3",
+    "roomId": "1"
+    },
+    {
+    "sentAt":"2015-05-22T15:55:10.542Z",
+    "messageId": "4",
+    "content": "Hello 4",
+    "senderId": "4",
+    "roomId": "1"
+    }
+    ]
+    }
