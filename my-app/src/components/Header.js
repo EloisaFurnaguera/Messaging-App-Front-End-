@@ -5,7 +5,7 @@ class Header extends Component {
         return (
             <div>
 
-                <h1 className = "hearder"> Header Messages</h1>
+                <h1 className = "header"> Header Messages</h1>
                 
             </div>
         )
