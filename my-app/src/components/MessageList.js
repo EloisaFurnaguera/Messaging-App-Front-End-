@@ -7,8 +7,23 @@ class MessageList extends Component {
 
     render() {
         return (
-            <div>
-               
+           
+        <div>
+
+        <div>
+            <form>
+
+            <input type ="text" placeholder="Text Here"/>
+
+
+            </form>
+
+
+        </div>
+              
+                    
+           
+                
 
                 <div>
                  { this.props.messages.map((message, i)=> {
@@ -18,9 +33,9 @@ class MessageList extends Component {
                   
                  }
                 </div>
-
-
             </div>
+
+           
         )
     }
 }

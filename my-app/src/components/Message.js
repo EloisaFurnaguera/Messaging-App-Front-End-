@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 
 class Message extends Component {
     render() {
+
+ 
+    const betterDateFormat = (new Date(this.props.message.sentAt)).toDateString()
+
+
         return (
         <div>
             <ul>
-                <li>{this.props.message.sentAt}</li>
+                <li>{betterDateFormat}</li>
                 <li>{this.props.message.messageId}</li>
                 <li>{this.props.message.content}</li>
                 <li>{this.props.message.senderId}</li>
