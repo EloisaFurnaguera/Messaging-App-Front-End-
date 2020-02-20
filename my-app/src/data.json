@@ -21,10 +21,17 @@
     "roomId": "1"
     },
     {
-    "sentAt":"2015-05-22T15:55:10.542Z",
+    "sentAt":"2015-05-22T14:55:10.542Z",
     "messageId": "4",
     "content": "Hello 4",
     "senderId": "4",
+    "roomId": "1"
+    },
+    {
+    "sentAt":"2015-05-22T15:55:10.542Z",
+    "messageId": "5",
+    "content": "Hello 5",
+    "senderId": "5",
     "roomId": "1"
     }
     ]
