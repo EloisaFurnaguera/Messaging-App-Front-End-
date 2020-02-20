@@ -10,21 +10,23 @@ class Message extends Component {
 
         return (
 
-       <div>
+       <div className="container ">
         <div> 
-            <button onClick={this.props.delMessage.bind(this,messageId)}>Delete
+            <button className="btnDel"  
+                    onClick={this.props.delMessage.bind(this,messageId)}>Delete
             </button>                        
           </div>  
 
 
 
         <div>
+        <span className= "time">{betterDateFormat}</span>  
             <ul>
-                <li>{betterDateFormat}</li>
-                <li>messageId: {this.props.message.messageId}</li>
+                
+      
                 <li>content: {this.props.message.content}</li>
                 <li>senderId: {this.props.message.senderId}</li>
-                <li>roomId: {this.props.message.roomId}</li>
+
                 <li>{""}</li>
             </ul>
          </div>

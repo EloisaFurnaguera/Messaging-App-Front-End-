@@ -1,3 +1,98 @@
-.header {
-  background-color: rgb(133, 125, 125);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: 1;
+}
+
+.m-box {
+  background: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px black dotted; 
+}
+
+.container {
+  box-shadow: -4px 8px 20px 5px #d2d6d982, 0 6px 20px 0 #d9dcdf8c;
+  background-color: transparent;
+  border-radius: 20px;
+  height: 80px;
+  width: 800px;
+  margin-top: 20px;
+  float: center;
+}
+
+.time { 
+  color: #999;
+  text-align: left;
+  font-size: small;
+}
+
+.headerStyle { 
+  background: rgb(76, 125, 224);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.btnSort { 
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  background-image: linear-gradient(to top,#3fc6df,#69d8ec);
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.sortContainer{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.btnDel { 
+  width: 80px; 
+  height: 40px;  
+  margin-top: 20px; 
+  border-radius: 10px;
+  color: white;
+  background-image: linear-gradient(to top,#3fc6df,#69d8ec);
+  font-size: 15px;
+  border: none;
+  outline: none;
+  text-align: center;
+  float:right; 
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  color: rgb(28, 75, 129);;
+}
+
+.pages {
+  display:inline;
+  padding: 10px;
+  color: rgb(28, 75, 129);;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.pagesContainer{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.selected {
+color: #999;
+font-weight: bolder;
+
 }

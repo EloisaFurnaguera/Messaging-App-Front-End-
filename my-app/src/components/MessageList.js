@@ -31,11 +31,11 @@ class MessageList extends Component {
         <div>
 
 <div className = "sortContainer">  
-          <button onClick={this.props.doToggleSort.bind(this)}>
+          <button onClick={this.props.doToggleSort.bind(this)} className = "btnSort">
             {this.props.sortStrategy === "ascending" ? " Newest First" : " Oldest First"}
           </button> 
         </div>
-        <div>
+        <div className ="pagesContainer">
           {
             pageNumbers.map(number => {
               return (
@@ -49,11 +49,6 @@ class MessageList extends Component {
           }
         </div>
 
-            <div>  
-                    <button onClick={this.props.doToggleSort.bind(this)} className = "btnSort">
-                        {this.props.sortStrategy === "ascending" ? " Newest First" : " Oldest First"}
-                    </button> 
-            </div>
 
             <div>
                  { currentMessages.map((message, i)=> {
