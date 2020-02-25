@@ -30,16 +30,32 @@ class App extends Component {
     this.setState({ messages: [...this.state.messages.filter(message => message.messageId !== messageId)] });   
   }
 
+  addMessages = (message) =>{
+    const newMessage = {
+      sentAt: '',
+      messageId: '',
+      content: message.content,
+      senderId: '',
+      senderName: message.senderName,
+      roomId: "1"
+    }
+    this.setState({ messages: [...this.state.messages, newMessage]});
+    
+  }
+
 
   render() {
+
+   
     return (
       <div>
         <Header />
-        <AddMessage />
         <MessageList messages={this.state.messages} 
                     sortStrategy={this.state.sortStrategy}
                     doToggleSort={this.doToggleSort}
-                    delMessage={this.delMessage}/>
+                    delMessage={this.delMessage}
+                    />
+          <AddMessage addMessages={this.addMessages}/>
       </div>
     
     )

@@ -5,7 +5,7 @@ class MessageList extends Component {
 
     state = {
         currentPage: 1,
-        messagesPerPage: 2
+        messagesPerPage: 3
       };
          
       changePage (e) {
