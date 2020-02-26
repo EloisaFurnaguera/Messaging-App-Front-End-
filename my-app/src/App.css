@@ -105,7 +105,7 @@ font-weight: bolder;
 }
 
 .field {
-  width: 280%;
+  width: 580px;
   height: 106px;
   border-radius: 6px;
   border-color: rgb(207, 203, 203);
@@ -114,6 +114,7 @@ font-weight: bolder;
 }
 
 .submit{
+
   width: 100px; 
   height: 40px;  
   border-radius: 10px;
@@ -122,10 +123,18 @@ font-weight: bolder;
   font-size: 15px;
   border: none;
   outline: none;
-  text-align: center; 
+  text-align: center;
+  
 }
 
 .lable {
+  display: flex;
   color: rgb(100, 97, 97);
-  margin: 20px 20px 20px 250px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.centerBnt {
+  display: flex;
+  justify-content: center;
 }

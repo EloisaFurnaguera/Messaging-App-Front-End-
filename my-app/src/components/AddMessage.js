@@ -27,12 +27,14 @@ class AddMessage extends Component {
                                   value={this.state.content}
                                   onChange={this.onChange}
                                   className="field"
-                                  />                
+                                  />  
+                    </label>          
+                    <div className="centerBnt">
                         <input type='submit'
                                value="Send"
                                className="submit"               
                                />
-                    </label>
+                    </div>
                 </form>                          
             </div>
         )
