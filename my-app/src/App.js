@@ -5,7 +5,6 @@ import AddMessage from './components/AddMessage'
 import data from './data.json'
 import './App.css';
 
-
 class App extends Component {
   state ={
     messages : data.messages,
@@ -44,7 +43,6 @@ class App extends Component {
   }
 
   render() {
-
     return (
       <div>
         <Header />
@@ -53,9 +51,8 @@ class App extends Component {
                     doToggleSort={this.doToggleSort}
                     delMessage={this.delMessage}         
                     />
-          <AddMessage addMessages={this.addMessages}/>
-      </div>
-    
+        <AddMessage addMessages={this.addMessages}/>
+      </div>    
     )
   }
 }
