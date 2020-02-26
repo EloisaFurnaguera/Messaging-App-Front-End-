@@ -35,6 +35,7 @@ body {
   color: white;
   text-align: center;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 .btnSort { 
@@ -114,7 +115,6 @@ font-weight: bolder;
 }
 
 .submit{
-
   width: 100px; 
   height: 40px;  
   border-radius: 10px;
@@ -123,8 +123,7 @@ font-weight: bolder;
   font-size: 15px;
   border: none;
   outline: none;
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .lable {
