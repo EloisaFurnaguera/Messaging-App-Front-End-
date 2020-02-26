@@ -103,3 +103,13 @@ font-weight: bolder;
 .content{
   margin: 1px 1px 10px;
 }
+
+.field {
+  width: 20%;
+  height: 36px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.3s all;
+  margin: 10px 10px 10px;
+}

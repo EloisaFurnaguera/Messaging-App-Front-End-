@@ -26,34 +26,32 @@ class App extends Component {
     }
   }
 
-  delMessage = (messageId) => {    
-    this.setState({ messages: [...this.state.messages.filter(message => message.messageId !== messageId)] });   
+  delMessage = (sentAt,content) => {   
+    console.log(this.state) 
+    this.setState({ messages: [...this.state.messages.filter(message => message.content !== content || message.sentAt !== sentAt)]});   
   }
 
   addMessages = (message) =>{
     const newMessage = {
-      sentAt: '',
+      sentAt: message.sentAt,
       messageId: '',
       content: message.content,
       senderId: '',
       senderName: message.senderName,
       roomId: "1"
     }
-    this.setState({ messages: [...this.state.messages, newMessage]});
-    
+    this.setState({ messages: [...this.state.messages, newMessage]});  
   }
-
 
   render() {
 
-   
     return (
       <div>
         <Header />
         <MessageList messages={this.state.messages} 
                     sortStrategy={this.state.sortStrategy}
                     doToggleSort={this.doToggleSort}
-                    delMessage={this.delMessage}
+                    delMessage={this.delMessage}         
                     />
           <AddMessage addMessages={this.addMessages}/>
       </div>

@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
 
+
+const d = new Date
+
 class AddMessage extends Component {
     state = {
-        sentAt: '',
+        sentAt: d.toISOString(),
         content: '',
-        senderName: '',
+        senderName: ''
     }
-
+   
     onSubmit = (e) => {
         e.preventDefault();
         this.props.addMessages(this.state);
-        this.setState({sentAt: '',
+        this.setState({
                        content: '',
-                       senderName: '',  
+                       senderName: '' 
         });
+    
     }
 
     onChange = (e) => this.setState({ [e.target.name]: e.target.value});
@@ -28,12 +32,14 @@ class AddMessage extends Component {
                            placeholder="Name" 
                            value={this.state.senderName}
                            onChange={this.onChange}
+                           className="field"
                            />
                     <input type ="text" 
                            name ="content"
                            placeholder="content" 
                            value={this.state.content}
                            onChange={this.onChange}
+                           className="field"
                            />
 
                     <input type='submit'
