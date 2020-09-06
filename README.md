@@ -1,4 +1,4 @@
-# Messaging App
+# Messages App
 
 This pretty messaging app supports adding, deleting, sorting by date, and pagination. It is built using  React, Javascript, CSS, HTML,  and Bootstrap. 
 
