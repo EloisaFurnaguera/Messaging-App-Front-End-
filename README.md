@@ -2,7 +2,7 @@
 
 This pretty messaging app supports adding, deleting, sorting by date, and pagination. It is built using  React, Javascript, CSS, HTML,  and Bootstrap. 
 
-![App](http://g.recordit.co/qYwmu0hSqh.gif)
+![App](http://g.recordit.co/gC9ic2wUHM.gif)
 
 
 ## Instructions:
