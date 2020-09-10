@@ -4,6 +4,8 @@ This pretty messaging app supports adding, deleting, sorting by date, and pagina
 
 ![App](http://g.recordit.co/gC9ic2wUHM.gif)
 
+![App](http://g.recordit.co/mOi0W9LdNJ.gif)
+
 
 ## Instructions:
 
